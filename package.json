@@ -1,0 +1,16 @@
+{
+  "name": "sitemaira",
+  "version": "1.0.0",
+  "description": "Site da Dra. Maíra - Pediatria e Psicanálise",
+  "main": "index.html",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": ["pediatria", "psicanálise", "site", "médico"],
+  "author": "Dra. Maíra",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}

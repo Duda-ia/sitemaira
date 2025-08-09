@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Maíra - Pediatria e Psicanálise</title>
+    <meta name="description" content="Cuidado e acolhimento em cada fase da vida. Dra. Maíra - Pediatria, Hebiatria e Psicanálise.">
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./elementos/favicon.ico">
+</head>
+<body class="bg-neutral-light">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <img src="./elementos/logomaira.png" alt="Dra. Maíra" class="h-12 w-auto">
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#sobre" class="text-neutral-dark hover:text-brand transition-colors duration-300">Sobre Mim</a>
+                        <a href="#consultorio" class="text-neutral-dark hover:text-brand transition-colors duration-300">Consultório</a>
+                        <a href="#especialidades" class="text-neutral-dark hover:text-brand transition-colors duration-300">Especialidades</a>
+                        <a href="#midia" class="text-neutral-dark hover:text-brand transition-colors duration-300">Mídia</a>
+                        <a href="#faq" class="text-neutral-dark hover:text-brand transition-colors duration-300">FAQ</a>
+                        <a href="#contato" class="text-neutral-dark hover:text-brand transition-colors duration-300">Contato</a>
+                        <a href="./blog.html" class="text-neutral-dark hover:text-brand transition-colors duration-300">Blog</a>
+                    </div>
+                </div>
+                
+                <!-- WhatsApp Button -->
+                <div class="hidden md:block">
+                    <a href="https://wa.me/5511999999999" target="_blank" class="btn-primary">
+                        Agendar Consulta
+                    </a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-neutral-dark hover:text-brand">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#sobre" class="block px-3 py-2 text-neutral-dark hover:text-brand">Sobre Mim</a>
+                <a href="#consultorio" class="block px-3 py-2 text-neutral-dark hover:text-brand">Consultório</a>
+                <a href="#especialidades" class="block px-3 py-2 text-neutral-dark hover:text-brand">Especialidades</a>
+                <a href="#midia" class="block px-3 py-2 text-neutral-dark hover:text-brand">Mídia</a>
+                <a href="#faq" class="block px-3 py-2 text-neutral-dark hover:text-brand">FAQ</a>
+                <a href="#contato" class="block px-3 py-2 text-neutral-dark hover:text-brand">Contato</a>
+                <a href="./blog.html" class="block px-3 py-2 text-neutral-dark hover:text-brand">Blog</a>
+                <a href="https://wa.me/5511999999999" target="_blank" class="block px-3 py-2 btn-primary mt-4">
+                    Agendar Consulta
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-20 pb-16 bg-gradient-to-br from-brand-light to-neutral-light">
+        <div class="max-w-7xl mx-auto section-padding">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <h1 class="text-4xl md:text-6xl font-marcellus text-neutral-dark leading-tight">
+                        Cuidado e acolhimento em cada fase da vida
+                    </h1>
+                    <p class="text-xl text-neutral-dark/80 leading-relaxed">
+                        Dra. Maíra oferece atendimento humanizado em Pediatria, Hebiatria e Psicanálise, 
+                        cuidando do desenvolvimento saudável de crianças, adolescentes e suas famílias.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/5511999999999" target="_blank" class="btn-primary text-center">
+                            Agendar Consulta
+                        </a>
+                        <a href="./blog.html" class="btn-secondary text-center">
+                            Ler Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="./elementos/dra-maira-hero.jpg" alt="Dra. Maíra - Pediatra e Psicanalista" 
+                         class="w-full h-96 md:h-[500px] object-cover rounded-2xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mim Section -->
+    <section id="sobre" class="section-padding bg-white">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <h2 class="text-3xl md:text-4xl font-marcellus text-neutral-dark">
+                Sobre Mim
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-left">
+                    <p class="text-lg leading-relaxed text-neutral-dark/80">
+                        Sou Dra. Maíra, médica pediatra e psicanalista com mais de 15 anos de experiência 
+                        no cuidado de crianças e adolescentes. Minha abordagem é baseada no respeito à 
+                        individualidade de cada criança e sua família.
+                    </p>
+                    <p class="text-lg leading-relaxed text-neutral-dark/80">
+                        Acredito que o desenvolvimento saudável passa pelo acolhimento, escuta atenta e 
+                        parceria com os pais. Cada consulta é um momento único de cuidado e orientação.
+                    </p>
+                </div>
+                <div class="relative">
+                    <img src="./elementos/dra-maira-sobre.jpg" alt="Dra. Maíra em consulta" 
+                         class="w-full h-80 object-cover rounded-2xl shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultório Section -->
+    <section id="consultorio" class="section-padding bg-neutral-light">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-marcellus text-neutral-dark text-center mb-12">
+                Consultório
+            </h2>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-marcellus text-neutral-dark mb-4">Localização</h3>
+                        <p class="text-lg text-neutral-dark/80 mb-4">
+                            Rua das Flores, 123 - Jardins<br>
+                            São Paulo - SP, 01234-567
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-brand" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-neutral-dark">Próximo ao Metrô Consolação</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-brand" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-neutral-dark">Segunda a Sexta: 8h às 18h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/5511999999999" target="_blank" class="btn-primary text-center">
+                            Agendar pelo WhatsApp
+                        </a>
+                        <a href="https://maps.google.com/?q=Rua+das+Flores+123+São+Paulo" target="_blank" class="btn-secondary text-center">
+                            Ver no Google Maps
+                        </a>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <img src="./elementos/consultorio-1.jpg" alt="Consultório Dra. Maíra" 
+                         class="w-full h-64 object-cover rounded-2xl shadow-lg">
+                    <img src="./elementos/consultorio-2.jpg" alt="Sala de espera" 
+                         class="w-full h-64 object-cover rounded-2xl shadow-lg">
+                </div>
+            </div>
+            <!-- Google Maps -->
+            <div class="mt-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1234567890123!2d-46.654321!3d-23.567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM0JzA0LjQiUyA0NsKwMzknMTUuNiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123" 
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade" class="rounded-2xl shadow-lg"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Especialidades Section -->
+    <section id="especialidades" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-marcellus text-neutral-dark mb-6">
+                    Especialidades e Formação
+                </h2>
+                <p class="text-lg text-neutral-dark/80 max-w-3xl mx-auto">
+                    Formada em Medicina pela USP, com especialização em Pediatria e formação em Psicanálise. 
+                    Atuação focada no desenvolvimento integral da criança e do adolescente.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pediatria -->
+                <div class="bg-neutral-light p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-marcellus text-neutral-dark">Pediatria</h3>
+                    </div>
+                    <p class="text-neutral-dark/80 leading-relaxed">
+                        Atendimento pediátrico completo, desde o nascimento até os 18 anos, 
+                        com foco na prevenção, diagnóstico e tratamento de doenças infantis.
+                    </p>
+                </div>
+                
+                <!-- Hebiatria -->
+                <div class="bg-neutral-light p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-marcellus text-neutral-dark">Hebiatria</h3>
+                    </div>
+                    <p class="text-neutral-dark/80 leading-relaxed">
+                        Medicina do adolescente, abordando questões específicas desta fase de desenvolvimento, 
+                        incluindo saúde mental e orientação para escolhas de vida.
+                    </p>
+                </div>
+                
+                <!-- Psicanálise -->
+                <div class="bg-neutral-light p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00-.078-2.183l1.562-1.562C15.802 8.249 16 9.1 16 10zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 16a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027zm-4.677-2.796a4.002 4.002 0 01-.041-2.08l-.08.08-1.53-1.533A5.98 5.98 0 004 10c0 .954.223 1.856.619 2.657l1.54-1.54zm1.088 6.178A5.974 5.974 0 0010 16a5.974 5.974 0 004.334-1.834l-1.54 1.54a4.002 4.002 0 01-1.794.027z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-marcellus text-neutral-dark">Psicanálise</h3>
+                    </div>
+                    <p class="text-neutral-dark/80 leading-relaxed">
+                        Atendimento psicanalítico para crianças, adolescentes e adultos, 
+                        proporcionando um espaço de escuta e elaboração das questões emocionais.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mídia Section -->
+    <section id="midia" class="section-padding bg-neutral-light">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-marcellus text-neutral-dark text-center mb-12">
+                Participações na Mídia
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- TV Cultura -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="./elementos/tv-cultura.jpg" alt="TV Cultura" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-marcellus text-neutral-dark mb-2">TV Cultura</h3>
+                    <p class="text-neutral-dark/80 mb-4">Entrevista sobre desenvolvimento infantil</p>
+                    <a href="#" class="text-brand hover:text-brand-dark font-medium">Assistir →</a>
+                </div>
+                
+                <!-- CNN -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="./elementos/cnn.jpg" alt="CNN Brasil" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-marcellus text-neutral-dark mb-2">CNN Brasil</h3>
+                    <p class="text-neutral-dark/80 mb-4">Debate sobre saúde mental na adolescência</p>
+                    <a href="#" class="text-brand hover:text-brand-dark font-medium">Assistir →</a>
+                </div>
+                
+                <!-- Revista -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="./elementos/revista.jpg" alt="Revista Saúde" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-marcellus text-neutral-dark mb-2">Revista Saúde</h3>
+                    <p class="text-neutral-dark/80 mb-4">Artigo sobre alimentação infantil</p>
+                    <a href="#" class="text-brand hover:text-brand-dark font-medium">Ler →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section-padding bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-marcellus text-neutral-dark text-center mb-12">
+                Perguntas Frequentes
+            </h2>
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-neutral-light rounded-2xl">
+                    <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-neutral-light transition-colors duration-300">
+                        <span class="font-medium text-neutral-dark">Como agendar uma consulta?</span>
+                        <svg class="w-5 h-5 text-brand transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-neutral-dark/80 leading-relaxed">
+                            Você pode agendar sua consulta através do WhatsApp (11) 99999-9999, 
+                            por telefone ou pessoalmente no consultório. Atendemos de segunda a sexta, 
+                            das 8h às 18h.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="border border-neutral-light rounded-2xl">
+                    <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-neutral-light transition-colors duration-300">
+                        <span class="font-medium text-neutral-dark">Qual a idade para atendimento pediátrico?</span>
+                        <svg class="w-5 h-5 text-brand transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-neutral-dark/80 leading-relaxed">
+                            Atendemos crianças desde o nascimento até os 18 anos. Para adolescentes, 
+                            oferecemos atendimento específico em hebiatria, considerando as particularidades 
+                            desta fase de desenvolvimento.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="border border-neutral-light rounded-2xl">
+                    <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-neutral-light transition-colors duration-300">
+                        <span class="font-medium text-neutral-dark">Como funciona o atendimento psicanalítico?</span>
+                        <svg class="w-5 h-5 text-brand transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-neutral-dark/80 leading-relaxed">
+                            O atendimento psicanalítico é individualizado e baseado na escuta atenta. 
+                            As sessões têm duração de 50 minutos e a frequência é definida de acordo 
+                            com as necessidades de cada paciente.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="border border-neutral-light rounded-2xl">
+                    <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-neutral-light transition-colors duration-300">
+                        <span class="font-medium text-neutral-dark">Aceitam convênios médicos?</span>
+                        <svg class="w-5 h-5 text-brand transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-neutral-dark/80 leading-relaxed">
+                            Atendemos alguns convênios médicos. Entre em contato para verificar 
+                            se seu plano está na lista de convênios aceitos. Também oferecemos 
+                            atendimento particular com valores acessíveis.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="border border-neutral-light rounded-2xl">
+                    <button class="faq-button w-full px-6 py-4 text-left flex justify-between items-center hover:bg-neutral-light transition-colors duration-300">
+                        <span class="font-medium text-neutral-dark">Qual a duração de uma consulta?</span>
+                        <svg class="w-5 h-5 text-brand transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-neutral-dark/80 leading-relaxed">
+                            As consultas pediátricas têm duração média de 30 a 45 minutos, 
+                            dependendo da complexidade do caso. O tempo é dedicado à avaliação, 
+                            orientação e esclarecimento de dúvidas dos pais.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="section-padding bg-neutral-light">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-marcellus text-neutral-dark text-center mb-12">
+                Entre em Contato
+            </h2>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-marcellus text-neutral-dark mb-6">Informações de Contato</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-brand rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-neutral-dark">Telefone</p>
+                                    <p class="text-neutral-dark/80">(11) 99999-9999</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-brand rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-neutral-dark">E-mail</p>
+                                    <p class="text-neutral-dark/80">contato@dramaira.com.br</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-brand rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-neutral-dark">Endereço</p>
+                                    <p class="text-neutral-dark/80">Rua das Flores, 123 - Jardins<br>São Paulo - SP</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/5511999999999" target="_blank" class="btn-primary text-center">
+                            WhatsApp
+                        </a>
+                        <a href="mailto:contato@dramaira.com.br" class="btn-secondary text-center">
+                            E-mail
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <img src="./elementos/consultorio-externo.jpg" alt="Consultório Dra. Maíra" 
+                         class="w-full h-64 object-cover rounded-2xl shadow-lg">
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <h4 class="text-xl font-marcellus text-neutral-dark mb-4">Horário de Atendimento</h4>
+                        <div class="space-y-2 text-neutral-dark/80">
+                            <p><strong>Segunda a Sexta:</strong> 8h às 18h</p>
+                            <p><strong>Sábado:</strong> 8h às 12h</p>
+                            <p><strong>Domingo:</strong> Fechado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <img src="./elementos/logomaira.png" alt="Dra. Maíra" class="h-12 w-auto mb-4">
+                    <p class="text-white/80 mb-4">
+                        Cuidado e acolhimento em cada fase da vida. 
+                        Dra. Maíra - Pediatria, Hebiatria e Psicanálise.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white/80 hover:text-brand transition-colors duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-white/80 hover:text-brand transition-colors duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-white/80 hover:text-brand transition-colors duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.746-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-marcellus mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2 text-white/80">
+                        <li><a href="#sobre" class="hover:text-brand transition-colors duration-300">Sobre Mim</a></li>
+                        <li><a href="#consultorio" class="hover:text-brand transition-colors duration-300">Consultório</a></li>
+                        <li><a href="#especialidades" class="hover:text-brand transition-colors duration-300">Especialidades</a></li>
+                        <li><a href="./blog.html" class="hover:text-brand transition-colors duration-300">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-marcellus mb-4">Contato</h4>
+                    <ul class="space-y-2 text-white/80">
+                        <li>(11) 99999-9999</li>
+                        <li>contato@dramaira.com.br</li>
+                        <li>Rua das Flores, 123<br>Jardins - São Paulo</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
+                <p>&copy; 2024 Dra. Maíra. Todos os direitos reservados.</p>
+                <p class="mt-2">Desenvolvido com ❤️ para cuidar de você</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
