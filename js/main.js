@@ -83,18 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Navbar background on scroll
-document.addEventListener('DOMContentLoaded', function() {
-    const navbar = document.querySelector('nav');
-    
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            navbar?.classList.add('bg-white/95', 'backdrop-blur-sm');
-        } else {
-            navbar?.classList.remove('bg-white/95', 'backdrop-blur-sm');
-        }
-    });
-});
+
 
 // Lazy loading for images
 document.addEventListener('DOMContentLoaded', function() {

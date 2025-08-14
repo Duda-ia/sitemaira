@@ -10,24 +10,24 @@
 </head>
 <body class="bg-neutral-light">
     <!-- Navbar -->
-    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-lg z-50">
+    <nav id="site-nav" class="fixed top-0 left-0 w-full z-50 bg-transparent text-white transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
+            <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
-                <div class="flex-shrink-0">
-                    <img src="./elementos/logomaira.png" alt="Dra. Maíra" class="h-12 w-auto">
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="./elementos/logoterra.png" alt="Dra. Maíra" class="h-20 w-auto object-contain">
                 </div>
                 
                 <!-- Desktop Menu -->
                 <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#sobre" class="text-neutral-dark hover:text-brand transition-colors duration-300">Sobre Mim</a>
-                        <a href="#consultorio" class="text-neutral-dark hover:text-brand transition-colors duration-300">Consultório</a>
-                        <a href="#especialidades" class="text-neutral-dark hover:text-brand transition-colors duration-300">Especialidades</a>
-                        <a href="#midia" class="text-neutral-dark hover:text-brand transition-colors duration-300">Mídia</a>
-                        <a href="#faq" class="text-neutral-dark hover:text-brand transition-colors duration-300">FAQ</a>
-                        <a href="#contato" class="text-neutral-dark hover:text-brand transition-colors duration-300">Contato</a>
-                        <a href="./blog.html" class="text-neutral-dark hover:text-brand transition-colors duration-300">Blog</a>
+                    <div class="ml-12 flex items-center space-x-8">
+                        <a href="#sobre" class="transition-colors hover:text-brand">Sobre Mim</a>
+                        <a href="#consultorio" class="transition-colors hover:text-brand">Consultório</a>
+                        <a href="#especialidades" class="transition-colors hover:text-brand">Especialidades</a>
+                        <a href="#midia" class="transition-colors hover:text-brand">Mídia</a>
+                        <a href="#faq" class="transition-colors hover:text-brand">FAQ</a>
+                        <a href="#contato" class="transition-colors hover:text-brand">Contato</a>
+                        <a href="./blog.html" class="transition-colors hover:text-brand">Blog</a>
                     </div>
                 </div>
                 
@@ -40,7 +40,7 @@
                 
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-neutral-dark hover:text-brand">
+                    <button id="mobile-menu-button" class="hover:text-brand">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
@@ -67,42 +67,58 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="pt-20 pb-16 bg-gradient-to-br from-brand-light to-neutral-light">
-        <div class="max-w-7xl mx-auto section-padding">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-8">
-                    <h1 class="text-4xl md:text-6xl font-marcellus text-neutral-dark leading-tight">
-                        Cuidado e acolhimento em cada fase da vida
-                    </h1>
-                    <p class="text-xl text-neutral-dark/80 leading-relaxed">
-                        Dra. Maíra oferece atendimento humanizado em Pediatria, Hebiatria e Psicanálise, 
-                        cuidando do desenvolvimento saudável de crianças, adolescentes e suas famílias.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="https://wa.me/5511999999999" target="_blank" class="btn-primary text-center">
-                            Agendar Consulta
-                        </a>
-                        <a href="./blog.html" class="btn-secondary text-center">
-                            Ler Blog
-                        </a>
-                    </div>
-                </div>
-                <div class="relative">
-                    <img src="./elementos/dra-maira-hero.jpg" alt="Dra. Maíra - Pediatra e Psicanalista" 
-                         class="w-full h-96 md:h-[500px] object-cover rounded-2xl shadow-2xl">
-                </div>
+    <section id="hero" class="relative overflow-hidden min-h-[80svh] lg:min-h-[90svh]">
+      <!-- Imagem -->
+      <img src="./fotos/mairafoto4.jpg" alt="Dra. Maíra Terra"
+           class="absolute inset-0 w-full h-full object-cover hero-img z-0" loading="lazy" decoding="async" />
+
+      <!-- Overlays: escurece lateral esquerda e base, e suaviza direita -->
+      <div class="absolute inset-0 z-0">
+        <!-- esquerda -> centro: escurece para legibilidade do texto -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/55 via-black/35 to-transparent"></div>
+        <!-- base: um pouco mais escuro no rodapé para botões -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent"></div>
+        <!-- direita: véu suave para transição, sem "apagar" o rosto -->
+        <div class="absolute inset-0 bg-gradient-to-l from-black/10 via-transparent to-transparent"></div>
+      </div>
+
+      <!-- Conteúdo (safe area) -->
+      <div class="relative z-10 flex items-center min-h-[80svh] lg:min-h-[90svh]">
+        <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- SAFE AREA: limita o texto e cria uma zona morta à direita em telas grandes -->
+          <div class="max-w-[48ch] lg:max-w-[56ch] lg:mr-[22vw]">
+            <h1 class="font-marcellus text-white text-4xl md:text-6xl leading-tight drop-shadow-xl">
+              Cuidado e acolhimento em cada fase da vida
+            </h1>
+            <p class="mt-6 text-lg md:text-xl text-white/90 leading-relaxed drop-shadow">
+              Dra. Maíra oferece atendimento humanizado em Pediatria, Hebiatria e Psicanálise, cuidando do
+              desenvolvimento saudável de crianças, adolescentes e suas famílias.
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row gap-4">
+              <a href="https://wa.me/5511999999999" class="btn-primary">Agendar Consulta</a>
+              <a href="./blog.html" class="btn-ghost">Ir para o Blog</a>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Sobre Mim Section -->
     <section id="sobre" class="section-padding bg-white">
-        <div class="max-w-4xl mx-auto text-center space-y-8">
-            <h2 class="text-3xl md:text-4xl font-marcellus text-neutral-dark">
-                Sobre Mim
-            </h2>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6 text-left">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Image -->
+                <div class="relative">
+                    <img src="./fotos/mairafoto2.jpg" alt="Dra. Maíra Terra — retrato acolhedor" 
+                         class="w-full h-[420px] lg:h-[520px] object-cover object-[50%_40%] rounded-2xl shadow-lg" 
+                         loading="lazy" decoding="async">
+                </div>
+                
+                <!-- Content -->
+                <div class="space-y-6">
+                    <h2 class="text-3xl md:text-4xl font-marcellus text-neutral-dark">
+                        Sobre Mim
+                    </h2>
                     <p class="text-lg leading-relaxed text-neutral-dark/80">
                         Sou Dra. Maíra, médica pediatra e psicanalista com mais de 15 anos de experiência 
                         no cuidado de crianças e adolescentes. Minha abordagem é baseada no respeito à 
@@ -113,10 +129,6 @@
                         parceria com os pais. Cada consulta é um momento único de cuidado e orientação.
                     </p>
                 </div>
-                <div class="relative">
-                    <img src="./elementos/dra-maira-sobre.jpg" alt="Dra. Maíra em consulta" 
-                         class="w-full h-80 object-cover rounded-2xl shadow-lg">
-                </div>
             </div>
         </div>
     </section>
@@ -125,22 +137,33 @@
     <section id="consultorio" class="section-padding bg-neutral-light">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-marcellus text-neutral-dark text-center mb-12">
-                Consultório
+                Locais de Atendimento
             </h2>
             <div class="grid lg:grid-cols-2 gap-12">
                 <div class="space-y-8">
                     <div class="bg-white p-8 rounded-2xl shadow-lg">
                         <h3 class="text-2xl font-marcellus text-neutral-dark mb-4">Localização</h3>
                         <p class="text-lg text-neutral-dark/80 mb-4">
-                            Rua das Flores, 123 - Jardins<br>
-                            São Paulo - SP, 01234-567
+                            <strong>Consultório Vila Madalena</strong><br>
+                            Rua Natingui, 107 - Vila Madalena<br>
+                            São Paulo - SP, 05443-002
+                        </p>
+                        <p class="text-lg text-neutral-dark/80 mb-4">
+                            <strong>Consultório Curumim</strong><br>
+                            Rua Pereira Leite, 513 - Sumarezinho<br>
+                            São Paulo - SP, 05442-000
+                        </p>
+                        <p class="text-lg text-neutral-dark/80 mb-4">
+                            <strong>Consultório Einstein</strong><br>
+                            Rua Apiacás, 85 - Perdizes<br>
+                            São Paulo - SP, 05017-020
                         </p>
                         <div class="space-y-4">
                             <div class="flex items-center space-x-3">
                                 <svg class="w-5 h-5 text-brand" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
                                 </svg>
-                                <span class="text-neutral-dark">Próximo ao Metrô Consolação</span>
+                            
                             </div>
                             <div class="flex items-center space-x-3">
                                 <svg class="w-5 h-5 text-brand" fill="currentColor" viewBox="0 0 20 20">
@@ -158,12 +181,6 @@
                             Ver no Google Maps
                         </a>
                     </div>
-                </div>
-                <div class="space-y-6">
-                    <img src="./elementos/consultorio-1.jpg" alt="Consultório Dra. Maíra" 
-                         class="w-full h-64 object-cover rounded-2xl shadow-lg">
-                    <img src="./elementos/consultorio-2.jpg" alt="Sala de espera" 
-                         class="w-full h-64 object-cover rounded-2xl shadow-lg">
                 </div>
             </div>
             <!-- Google Maps -->
@@ -500,5 +517,19 @@
     </footer>
 
     <script src="./js/main.js"></script>
+    <script>
+      const nav = document.getElementById('site-nav');
+      const swap = (scrolled) => {
+        if(scrolled){
+          nav.classList.remove('bg-transparent','text-white');
+          nav.classList.add('bg-white','text-neutral-800');
+        } else {
+          nav.classList.add('bg-transparent','text-white');
+          nav.classList.remove('bg-white','text-neutral-800');
+        }
+      };
+      swap(window.scrollY > 40);
+      window.addEventListener('scroll', () => swap(window.scrollY > 40));
+    </script>
 </body>
 </html>

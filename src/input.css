@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Red+Hat+Display:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   html {
@@ -10,12 +10,12 @@
   }
   
   body {
-    font-family: 'Inter', sans-serif;
-    color: #2E2E2E;
+    font-family: 'Red Hat Display', 'Work Sans', 'Poppins', 'Inter', sans-serif;
+    color: #1F3654;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Marcellus', serif;
+    font-family: 'Marcellus', 'Cinzel', 'Playfair Display', 'Cormorant Garamond', serif;
   }
 }
 
@@ -30,5 +30,54 @@
   
   .section-padding {
     @apply py-16 px-4 md:px-8 lg:px-16;
+  }
+  
+  /* Foco do enquadramento por breakpoint para manter o rosto visível */
+  .hero-img { object-position: 60% 50%; }          /* mobile: um pouco à direita */
+  @media (min-width: 768px){ .hero-img { object-position: 65% 50%; } }  /* tablet */
+  @media (min-width: 1024px){ .hero-img { object-position: 70% 50%; } } /* desktop */
+  @media (min-width: 1440px){ .hero-img { object-position: 68% 50%; } } /* telas largas */
+
+  /* Utilitários, se não existirem */
+  .btn-primary{ @apply inline-flex items-center justify-center px-5 py-3 rounded-full bg-brand text-white font-medium shadow-md hover:bg-brand-dark transition; }
+  .btn-ghost{ @apply inline-flex items-center justify-center px-5 py-3 rounded-full bg-white text-neutral-800 shadow hover:bg-neutral-100 transition; }
+  
+  /* Logo da navbar - centralização e proporção */
+  .navbar-logo {
+    @apply flex items-center justify-center;
+    max-height: 100%;
+  }
+  
+  /* Ajuste do espaçamento do menu para compensar logo maior */
+  @media (min-width: 768px) {
+    .navbar-menu {
+      margin-left: 3rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .navbar-menu {
+      margin-left: 4rem;
+    }
+  }
+  
+  /* Ajustes para logo h-20 */
+  .navbar-container {
+    @apply flex items-center;
+    min-height: 5rem; /* 80px para acomodar h-20 */
+  }
+  
+  /* Ajustes de cor para melhor contraste */
+  .text-primary {
+    color: #1F3654;
+  }
+  
+  .text-secondary {
+    color: #4A5568;
+  }
+  
+  /* Ajuste para botões com nova cor */
+  .btn-ghost {
+    @apply inline-flex items-center justify-center px-5 py-3 rounded-full bg-white text-neutral-dark shadow hover:bg-neutral-100 transition;
   }
 }
