@@ -12,17 +12,17 @@
     <!-- Navbar -->
     <nav id="site-nav" class="fixed top-0 left-0 w-full z-50 bg-transparent text-white transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
+            <div class="flex justify-between items-center h-24">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
-                    <img src="./elementos/logoterra.png" alt="Dra. Maíra" class="h-20 w-auto object-contain">
+                    <img src="./elementos/logoterra.png" alt="Dra. Maíra" class="h-24 w-auto object-contain">
                 </div>
                 
                 <!-- Desktop Menu -->
                 <div class="hidden md:block">
                     <div class="ml-12 flex items-center space-x-8">
                         <a href="#sobre" class="transition-colors hover:text-brand">Sobre Mim</a>
-                        <a href="#consultorio" class="transition-colors hover:text-brand">Consultório</a>
+                        <a href="#locais" class="transition-colors hover:text-brand">Atendimento</a>
                         <a href="#especialidades" class="transition-colors hover:text-brand">Especialidades</a>
                         <a href="#midia" class="transition-colors hover:text-brand">Mídia</a>
                         <a href="#faq" class="transition-colors hover:text-brand">FAQ</a>
@@ -53,7 +53,7 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="#sobre" class="block px-3 py-2 text-neutral-dark hover:text-brand">Sobre Mim</a>
-                <a href="#consultorio" class="block px-3 py-2 text-neutral-dark hover:text-brand">Consultório</a>
+                <a href="#locais" class="block px-3 py-2 text-neutral-dark hover:text-brand">Atendimento</a>
                 <a href="#especialidades" class="block px-3 py-2 text-neutral-dark hover:text-brand">Especialidades</a>
                 <a href="#midia" class="block px-3 py-2 text-neutral-dark hover:text-brand">Mídia</a>
                 <a href="#faq" class="block px-3 py-2 text-neutral-dark hover:text-brand">FAQ</a>
@@ -133,63 +133,80 @@
         </div>
     </section>
 
-    <!-- Consultório Section -->
-    <section id="consultorio" class="section-padding bg-neutral-light">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-marcellus text-neutral-dark text-center mb-12">
-                Locais de Atendimento
-            </h2>
-            <div class="grid lg:grid-cols-2 gap-12">
-                <div class="space-y-8">
-                    <div class="bg-white p-8 rounded-2xl shadow-lg">
-                        <h3 class="text-2xl font-marcellus text-neutral-dark mb-4">Localização</h3>
-                        <p class="text-lg text-neutral-dark/80 mb-4">
-                            <strong>Consultório Vila Madalena</strong><br>
-                            Rua Natingui, 107 - Vila Madalena<br>
-                            São Paulo - SP, 05443-002
-                        </p>
-                        <p class="text-lg text-neutral-dark/80 mb-4">
-                            <strong>Consultório Curumim</strong><br>
-                            Rua Pereira Leite, 513 - Sumarezinho<br>
-                            São Paulo - SP, 05442-000
-                        </p>
-                        <p class="text-lg text-neutral-dark/80 mb-4">
-                            <strong>Consultório Einstein</strong><br>
-                            Rua Apiacás, 85 - Perdizes<br>
-                            São Paulo - SP, 05017-020
-                        </p>
-                        <div class="space-y-4">
-                            <div class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-brand" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
-                                </svg>
-                            
-                            </div>
-                            <div class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-brand" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
-                                </svg>
-                                <span class="text-neutral-dark">Segunda a Sexta: 8h às 18h</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="https://wa.me/5511999999999" target="_blank" class="btn-primary text-center">
-                            Agendar pelo WhatsApp
-                        </a>
-                        <a href="https://maps.google.com/?q=Rua+das+Flores+123+São+Paulo" target="_blank" class="btn-secondary text-center">
-                            Ver no Google Maps
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Google Maps -->
-            <div class="mt-12">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1234567890123!2d-46.654321!3d-23.567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM0JzA0LjQiUyA0NsKwMzknMTUuNiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123" 
-                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade" class="rounded-2xl shadow-lg"></iframe>
-            </div>
+    <!-- Locais de Atendimento Section -->
+    <section id="locais" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <h2 class="text-center font-marcellus text-3xl md:text-4xl text-[#1F3654] mb-8">Locais de Atendimento</h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        <!-- Coluna Esquerda: Lista -->
+        <div class="bg-white rounded-2xl shadow-lg p-6">
+          <ul class="space-y-5" id="clinics-list">
+            <!-- Vila Madalena -->
+            <li>
+              <button
+                class="clinic-btn group text-left w-full"
+                data-map="https://www.google.com/maps?q=Rua%20Natingui%2C%20107%20-%20Vila%20Madalena%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005443-002&output=embed"
+                data-url="https://maps.google.com/?q=Rua+Natingui,+107+-+Vila+Madalena,+S%C3%A3o+Paulo+-+SP,+05443-002"
+              >
+                <h3 class="text-[#1F3654] text-xl font-semibold group-hover:underline">
+                  Consultório Vila Madalena
+                </h3>
+                <p class="text-sm text-neutral-600">Rua Natingui, 107 — Vila Madalena<br/>São Paulo — SP, 05443-002</p>
+              </button>
+            </li>
+
+            <!-- Curumim -->
+            <li>
+              <button
+                class="clinic-btn group text-left w-full"
+                data-map="https://www.google.com/maps?q=Rua%20Pereira%20Leite%2C%20513%20-%20Sumarezinho%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005442-000&output=embed"
+                data-url="https://maps.google.com/?q=Rua+Pereira+Leite,+513+-+Sumarezinho,+S%C3%A3o+Paulo+-+SP,+05442-000"
+              >
+                <h3 class="text-[#1F3654] text-xl font-semibold group-hover:underline">
+                  Consultório Curumim
+                </h3>
+                <p class="text-sm text-neutral-600">Rua Pereira Leite, 513 — Sumarezinho<br/>São Paulo — SP, 05442-000</p>
+              </button>
+            </li>
+
+            <!-- Einstein -->
+            <li>
+              <button
+                class="clinic-btn group text-left w-full"
+                data-map="https://www.google.com/maps?q=Rua%20Apia%C3%A7%C3%A1s%2C%2085%20-%20Perdizes%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005017-020&output=embed"
+                data-url="https://maps.google.com/?q=Rua+Apia%C3%A7%C3%A1s,+85+-+Perdizes,+S%C3%A3o+Paulo+-+SP,+05017-020"
+              >
+                <h3 class="text-[#1F3654] text-xl font-semibold group-hover:underline">
+                  Consultório Einstein
+                </h3>
+                <p class="text-sm text-neutral-600">Rua Apiaçás, 85 — Perdizes<br/>São Paulo — SP, 05017-020</p>
+              </button>
+            </li>
+          </ul>
+
+          <!-- CTA's -->
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="https://wa.me/5511999999999" class="inline-flex items-center px-5 py-3 rounded-full bg-[#B87A6B] text-white shadow hover:bg-[#8B4E3F] transition">
+              Agendar pelo WhatsApp
+            </a>
+            <a id="ver-mapa-link" href="#" target="_blank" rel="noopener"
+               class="inline-flex items-center px-5 py-3 rounded-full bg-white text-[#1F3654] shadow hover:bg-neutral-100 transition">
+              Ver no Google Maps
+            </a>
+          </div>
         </div>
+
+        <!-- Coluna Direita: Mapa -->
+        <div class="rounded-2xl overflow-hidden shadow-lg min-h-[360px]">
+          <iframe
+            id="clinics-map"
+            class="w-full h-[360px] md:h-[520px]"
+            src="https://www.google.com/maps?q=Rua%20Natingui%2C%20107%20-%20Vila%20Madalena%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005443-002&output=embed"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa do consultório selecionado"
+          ></iframe>
+        </div>
+      </div>
     </section>
 
     <!-- Especialidades Section -->
@@ -465,7 +482,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8">
                 <div class="md:col-span-2">
-                    <img src="./elementos/logomaira.png" alt="Dra. Maíra" class="h-12 w-auto mb-4">
+                    <img src="./elementos/logoterra.png" alt="Dra. Maíra" class="h-16 w-32 mb-4">
                     <p class="text-white/80 mb-4">
                         Cuidado e acolhimento em cada fase da vida. 
                         Dra. Maíra - Pediatria, Hebiatria e Psicanálise.
@@ -493,7 +510,7 @@
                     <h4 class="text-lg font-marcellus mb-4">Links Rápidos</h4>
                     <ul class="space-y-2 text-white/80">
                         <li><a href="#sobre" class="hover:text-brand transition-colors duration-300">Sobre Mim</a></li>
-                        <li><a href="#consultorio" class="hover:text-brand transition-colors duration-300">Consultório</a></li>
+                        <li><a href="#locais" class="hover:text-brand transition-colors duration-300">Atendimento</a></li>
                         <li><a href="#especialidades" class="hover:text-brand transition-colors duration-300">Especialidades</a></li>
                         <li><a href="./blog.html" class="hover:text-brand transition-colors duration-300">Blog</a></li>
                     </ul>
@@ -530,6 +547,37 @@
       };
       swap(window.scrollY > 40);
       window.addEventListener('scroll', () => swap(window.scrollY > 40));
+    </script>
+    
+    <script>
+      (function(){
+        const buttons = document.querySelectorAll('.clinic-btn');
+        const iframe  = document.getElementById('clinics-map');
+        const link    = document.getElementById('ver-mapa-link');
+
+        // estado visual (selecionado)
+        const setActive = (btn) => {
+          buttons.forEach(b => b.classList.remove('ring-2','ring-[#B87A6B]','rounded-xl','bg-[#B87A6B]/5'));
+          btn.classList.add('ring-2','ring-[#B87A6B]','rounded-xl','bg-[#B87A6B]/5');
+        };
+
+        // clique
+        buttons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            const mapSrc = btn.getAttribute('data-map');
+            const mapUrl = btn.getAttribute('data-url');
+            iframe.setAttribute('src', mapSrc);
+            link.setAttribute('href', mapUrl);
+            setActive(btn);
+          });
+        });
+
+        // selecionar o primeiro por padrão
+        if (buttons[0]) {
+          setActive(buttons[0]);
+          link.setAttribute('href', buttons[0].getAttribute('data-url'));
+        }
+      })();
     </script>
 </body>
 </html>

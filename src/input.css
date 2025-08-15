@@ -61,10 +61,10 @@
     }
   }
   
-  /* Ajustes para logo h-20 */
+  /* Ajustes para logo h-24 */
   .navbar-container {
     @apply flex items-center;
-    min-height: 5rem; /* 80px para acomodar h-20 */
+    min-height: 6rem; /* 96px para acomodar h-24 */
   }
   
   /* Ajustes de cor para melhor contraste */
@@ -79,5 +79,14 @@
   /* Ajuste para botões com nova cor */
   .btn-ghost {
     @apply inline-flex items-center justify-center px-5 py-3 rounded-full bg-white text-neutral-dark shadow hover:bg-neutral-100 transition;
+  }
+  
+  /* Estilos para botões dos consultórios */
+  .clinic-btn {
+    @apply p-4 transition-all duration-200 hover:bg-neutral-50;
+  }
+  
+  .clinic-btn:hover {
+    @apply transform scale-[1.02];
   }
 }
