@@ -89,4 +89,9 @@
   .clinic-btn:hover {
     @apply transform scale-[1.02];
   }
+  
+  /* Estilo para badge de play dos vídeos */
+  .play-badge {
+    @apply absolute right-3 bottom-3 inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/95 text-[#1F3654] font-semibold shadow;
+  }
 }
